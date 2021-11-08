@@ -5,6 +5,10 @@ const indexRoutes = require('./router/index')
 
 const app = express()
 
+//env config
+require('dotenv').config()
+
+
 
 // view engine setup
 app.set('views', path.join('views'));
@@ -19,6 +23,6 @@ app.use('/', indexRoutes)
 
 
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.listen(port,console.log(`Server listening on ${port} ..` ))
