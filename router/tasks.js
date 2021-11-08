@@ -11,21 +11,21 @@ const {getAllTasks,createTask,getSingleTask,updateTask,deleteTask} = require('..
 /**
  * create new task
  */
-router.post('/api/v1/tasks', createTask);
+router.post('/', createTask);
 
 /**
  * get single task!
  */
- router.get('/api/v1/tasks/:id', getSingleTask);
+ router.get('/:id', getSingleTask);
 
 /**
  * update task
  */
- router.patch('/api/v1/tasks/:id', updateTask);
+ router.patch('/:id', updateTask);
 
 /**
  * delete task
  */
- router.delete('/api/v1/tasks/:id', deleteTask);
+ router.delete('/:id', deleteTask);
 
 module.exports = router;
