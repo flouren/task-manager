@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const path = require('path')
 const indexRoutes = require('./router/index')
+const tasks = require('./router/tasks')
 
 const app = express()
 
@@ -17,8 +18,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join('public')));
 
 app.use('/', indexRoutes)
+app.use('/api/v1/tasks', tasks)
 
-
+// middleware
+app.use(express.json())
 
 
 
