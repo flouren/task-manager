@@ -15,13 +15,15 @@ require('dotenv').config()
 app.set('views', path.join('views'));
 app.set('view engine', 'ejs');
 
+// middleware
+app.use(express.json())
 app.use(express.static(path.join('public')));
 
+
+//routes
 app.use('/', indexRoutes)
 app.use('/api/v1/tasks', tasks)
 
-// middleware
-app.use(express.json())
 
 
 
