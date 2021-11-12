@@ -4,6 +4,8 @@ const path = require('path')
 const indexRoutes = require('./router/index')
 const tasks = require('./router/tasks')
 const connectDB = require('./db/connect')
+const notFound = require('./middleware/not-found')
+const errorHandler = require('./middleware/error-handler')
 
 const app = express()
 
@@ -25,7 +27,9 @@ app.use(express.static(path.join('public')));
 app.use('/', indexRoutes)
 app.use('/api/v1/tasks', tasks)
 
-
+//route not existing error handler
+app.use(notFound)
+app.use(errorHandler)
 
 
 
