@@ -6,7 +6,11 @@ by John Smilga
 01:56:00 - setting crud operations in controllers
 02:15:00 - finishin crud operations in controllers
 
+02:20:00 - refactor? asyncWrapper need to be completed? at the start of error handlers
 
 
 
-# fighting with github to merge master with main
+# Need to add frontend to backend! maybe in react
+
+
+# try to merge master with main branch
