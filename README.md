@@ -6,7 +6,7 @@ by John Smilga
 01:56:00 - setting crud operations in controllers
 02:15:00 - finishin crud operations in controllers
 
-02:20:00 - refactor? asyncWrapper need to be completed? at the start of error handlers
+02:42:00 - refactor? asyncWrapper need to be completed? at the start of error handlers
 
 
 
